@@ -1,0 +1,7 @@
+name: probe
+on: [push, workflow_dispatch]
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "actions run"; nproc; free -g; df -h /
